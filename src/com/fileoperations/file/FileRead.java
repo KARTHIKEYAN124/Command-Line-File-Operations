@@ -1,13 +1,13 @@
 package com.fileoperations.file;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 
-public class FileReader {
+public class FileRead {
     
-    public static ArrayList<String> readFileLines(Config config) throws Exception {
+    public static ArrayList<String> ReadLinesFromFile(String filePath) throws Exception {
         ArrayList<String> lines = new ArrayList<>();
-        String filePath = config.getProperty("file.path");
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;

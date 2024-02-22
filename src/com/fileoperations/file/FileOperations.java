@@ -1,6 +1,8 @@
 package com.fileoperations.file;
 
-import java.util.ArrayList;
+import com.fileoperations.processors.Sorter;
+import com.fileoperations.processors.LineRemover;
+
 
 public class FileOperations {
 
@@ -21,27 +23,27 @@ public class FileOperations {
             switch (operation) {
                 case "1":
                     // Sort Ascending
-                    sorter.sortAsc(filePath1);
+                    Sorter.sortAsc(filePath1, outputPath);
                     break;
                 case "2":
                     // Sort Descending
-                    sorter.sortDesc(filePath1);
+                    Sorter.sortDesc(filePath1, outputPath);
                     break;
                 case "3":
                     // Sort Ascending (Case Sensitive)
-                    sorter.sortAscCaseSensitive(filePath1);
+                    Sorter.sortAscCaseSens(filePath1, outputPath);
                     break;
                 case "4":
                     // Sort Descending (Case Sensitive)
-                    sorter.sortDescCaseSensitive(filePath1);
+                    Sorter.sortDescCaseSens(filePath1, outputPath);
                     break;
                 case "5":
                     // Remove lines in file 1 that are in file 2
-                    lineRemover.removeLinesFromFile2(filePath1, filePath2);
+                    LineRemover.removeLinesFromFile2(filePath1, filePath2, outputPath);
                     break;
                 case "6":
                     // Remove lines from file 1 that are not in file 2
-                    lineRemover.removeLinesNotInFile2(filePath1, filePath2);
+                    LineRemover.removeLinesNotInFile2(filePath1, filePath2, outputPath);
                     break;
                 default:
                     System.out.println("Invalid operation code. Please provide a valid operation code.");
