@@ -1,9 +1,9 @@
-package com.fileoperations.processors;
+package fileprocessors;
 
 import java.util.List;
 
-import com.fileoperations.file.FileRead;
-import com.fileoperations.file.FileWrite;
+import file.operations.FileRead;
+import file.operations.FileWrite;
 
 public class Sorter {
 

@@ -1,8 +1,8 @@
-package com.main.fileoperations;
+package main;
 
-import com.fileoperations.file.Config;
-import com.fileoperations.processors.LineRemover;
-import com.fileoperations.processors.Sorter;
+import file.operations.Config;
+import fileprocessors.LineRemover;
+import fileprocessors.Sorter;
 
 public class FileOperations {
 

@@ -1,4 +1,4 @@
-package com.fileoperations.processors;
+package fileprocessors;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

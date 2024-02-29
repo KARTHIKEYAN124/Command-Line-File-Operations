@@ -1,4 +1,4 @@
-package com.fileoperations.file;
+package file.operations;
 
 import java.io.FileInputStream;
 import java.io.IOException;
