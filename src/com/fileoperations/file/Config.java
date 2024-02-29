@@ -24,7 +24,11 @@ public class Config {
         return instance;
     }
 
-    public String getProperty(String key) {
+    public static void init() {
+        getInstance(); // Ensure instance is initialized
+    }
+
+    public String get(String key) {
         return properties.getProperty(key);
     }
 }

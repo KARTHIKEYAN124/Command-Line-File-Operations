@@ -1,54 +1,45 @@
 package com.fileoperations.processors;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.List;
 
 import com.fileoperations.file.FileRead;
 import com.fileoperations.file.FileWrite;
 
 public class Sorter {
 
-    public static void sortAsc(String filePath1, String outputPath) throws Exception {
-        // Read lines from file
-        ArrayList<String> lines = FileRead.ReadLinesFromFile(filePath1);
+	public static void SortAsc(String filePath1, String outputPath) throws Exception {
+        List<String> lines = FileRead.readLinesFromFile(filePath1);
 
-        // Sort lines in ascending order
-        Collections.sort(lines);
+        // Sort lines in ascending order without considering case sensitivity
+        lines.sort((s1, s2) -> s1.compareToIgnoreCase(s2));
 
-        // Write sorted lines to output file
         FileWrite.WriteLinesToFile(lines, outputPath);
     }
 
-    public static void sortDesc(String file1Path, String outputPath) throws Exception {
-        // Read lines from file
-        ArrayList<String> lines = FileRead.ReadLinesFromFile(file1Path);
 
-        // Sort lines in descending order
-        Collections.sort(lines, Collections.reverseOrder());
+	public static void SortDesc(String filePath1, String outputPath) throws Exception {
+        List<String> lines = FileRead.readLinesFromFile(filePath1);
 
-        // Write sorted lines to output file
+        // Sort lines in descending order without considering case sensitivity
+        lines.sort((s1, s2) -> s2.compareToIgnoreCase(s1));
+
         FileWrite.WriteLinesToFile(lines, outputPath);
     }
-
-    public static void sortAscCaseSens(String file1Path, String outputPath) throws Exception {
-        // Read lines from file
-        ArrayList<String> lines = FileRead.ReadLinesFromFile(file1Path);
+    public static void SortAscCaseSens(String filePath1, String outputPath) throws Exception {
+        List<String> lines = FileRead.readLinesFromFile(filePath1);
 
         // Sort lines in ascending order (case-sensitive)
         lines.sort(String::compareTo);
 
-        // Write sorted lines to output file
         FileWrite.WriteLinesToFile(lines, outputPath);
     }
 
-    public static void sortDescCaseSens(String file1Path, String outputPath) throws Exception {
-        // Read lines from file
-        ArrayList<String> lines = FileRead.ReadLinesFromFile(file1Path);
+    public static void SortDescCaseSens(String filePath1, String outputPath) throws Exception {
+        List<String> lines = FileRead.readLinesFromFile(filePath1);
 
         // Sort lines in descending order (case-sensitive)
         lines.sort((s1, s2) -> s2.compareTo(s1));
 
-        // Write sorted lines to output file
         FileWrite.WriteLinesToFile(lines, outputPath);
     }
 }

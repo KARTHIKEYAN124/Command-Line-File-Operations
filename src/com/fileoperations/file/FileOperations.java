@@ -1,52 +1,60 @@
 package com.fileoperations.file;
 
-import com.fileoperations.processors.Sorter;
 import com.fileoperations.processors.LineRemover;
-
+import com.fileoperations.processors.Sorter;
 
 public class FileOperations {
 
     public static void main(String[] args) {
-        if (args.length < 1) {
-            System.out.println("Usage: java FileOperations <operation>");
-            return;
-        }
-
-        String operation = args[0];
-
         try {
-            Config config = Config.getInstance(); // Assuming Config is a singleton class to handle configuration
-            String filePath1 = config.getProperty("file1.path");
-            String filePath2 = config.getProperty("file2.path");
-            String outputPath = config.getProperty("output.path");
+            Config.init(); // Initialize the Config class
+            
+            String filePath1 = Config.getInstance().get("file1.path");
+            String filePath2 = Config.getInstance().get("file2.path");
+            String outputPath = Config.getInstance().get("output.path");
+
+            String operation;
+            if (args.length < 1) {
+                System.out.println("Usage: java FileOperations <operation>");
+                return;
+            } else {
+                operation = args[0];
+            }
 
             switch (operation) {
                 case "1":
-                    // Sort Ascending
-                    Sorter.sortAsc(filePath1, outputPath);
+                    System.out.println("Sorting file 1 in ascending order...");
+                    Sorter.SortAsc(filePath1, outputPath);
+                    System.out.println("File sorted successfully.");
                     break;
                 case "2":
-                    // Sort Descending
-                    Sorter.sortDesc(filePath1, outputPath);
+                    System.out.println("Sorting file 1 in descending order...");
+                    Sorter.SortDesc(filePath1, outputPath);
+                    System.out.println("File sorted successfully.");
                     break;
                 case "3":
-                    // Sort Ascending (Case Sensitive)
-                    Sorter.sortAscCaseSens(filePath1, outputPath);
+                    System.out.println("Sorting file 1 in ascending order (case-sensitive)...");
+                    Sorter.SortAscCaseSens(filePath1, outputPath);
+                    System.out.println("File sorted successfully.");
                     break;
                 case "4":
-                    // Sort Descending (Case Sensitive)
-                    Sorter.sortDescCaseSens(filePath1, outputPath);
+                    System.out.println("Sorting file 1 in descending order (case-sensitive)...");
+                    Sorter.SortDescCaseSens(filePath1, outputPath);
+                    System.out.println("File sorted successfully.");
                     break;
                 case "5":
-                    // Remove lines in file 1 that are in file 2
+                    System.out.println("Removing lines from file 1 that are in file 2...");
                     LineRemover.removeLinesFromFile2(filePath1, filePath2, outputPath);
+                    System.out.println("Lines removed successfully.");
                     break;
                 case "6":
-                    // Remove lines from file 1 that are not in file 2
+                    System.out.println("Removing lines from file 1 that are not in file 2...");
                     LineRemover.removeLinesNotInFile2(filePath1, filePath2, outputPath);
+                    System.out.println("Lines removed successfully.");
                     break;
                 default:
                     System.out.println("Invalid operation code. Please provide a valid operation code.");
+                    break;
             }
         } catch (Exception e) {
             System.out.println("An error occurred: " + e.getMessage());
