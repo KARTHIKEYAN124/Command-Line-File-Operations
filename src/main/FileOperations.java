@@ -1,10 +1,29 @@
 package main;
 
+import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import file.operations.Config;
 import fileprocessors.LineRemover;
 import fileprocessors.Sorter;
 
 public class FileOperations {
+
+    private static final Logger logger = Logger.getLogger(FileOperations.class.getName());
+
+    static {
+        // Configure logger to write to log file specified in config
+        try {
+            String logFilePath = Config.getInstance().get("log.file.path");
+            FileHandler fileHandler = new FileHandler(logFilePath);
+            logger.addHandler(fileHandler);
+        } catch (IOException e) {
+            // Failed to configure logger, log the exception
+            logger.log(Level.SEVERE, "Failed to configure logger", e);
+        }
+    }
 
     public static void main(String[] args) {
         try {
@@ -13,6 +32,9 @@ public class FileOperations {
             String filePath1 = Config.getInstance().get("file1.path");
             String filePath2 = Config.getInstance().get("file2.path");
             String outputPath = Config.getInstance().get("output.path");
+
+            
+          //  int result = 1 / 0;
 
             String operation;
             if (args.length < 1) {
@@ -58,8 +80,9 @@ public class FileOperations {
                     break;
             }
         } catch (Exception e) {
-            System.out.println("An error occurred: " + e.getMessage());
-            e.printStackTrace();
+            // Log the exception
+            logger.log(Level.SEVERE, "An error occurred", e);
+            System.out.println("An error occurred. Please check the log for details.");
         }
     }
 }
