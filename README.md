@@ -41,7 +41,7 @@ The LineRemover class contains two methods that is RemoveLinesFromFile2 and Remo
 4.	In the Launch configuration option select the project.
 5.	In the Export destination option mention the destination the jar file should be stored.
 6.	Click on Finish.
-**Steps to create an Exe file** :  
+**Steps to create an Exe file** :   
 1.	Download and Install Laun4j Application from Launch4j Executable Wrapper download | SourceForge.net.
 2.	Create a configuration file in xml format, refer Launch4j docs for creating the configuration file https://launch4j.sourceforge.net/docs.html#Runtime_options. 
 3.	Open the command prompt and navigate to the Launch4j directory.
