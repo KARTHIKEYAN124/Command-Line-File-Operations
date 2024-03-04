@@ -31,22 +31,3 @@ Usage: **FileOperations.exe SortDescCase**.
 Usage: **FileOperations.exe RemoveLineIn**.  
 6.**RemoveLinesNotIn**: The RemoveLinesNotIn command is used to remove the lines from one file that are not present in another file.  
 Usage: **FileOperations.exe RemoveLinesNotIn**.     
-
-
-
-**Steps to create a Jar file** :    
-1.	Right click on the project. 
-2.	Click on Export from the Dropdown. 
-3.	Click on Runnable Jar from the pop up then click on Next.
-4.	In the Launch configuration option select the project.
-5.	In the Export destination option mention the destination the jar file should be stored.
-6.	Click on Finish.  
-
-**Steps to create an Exe file** :   
-1.	Download and Install Laun4j Application from Launch4j Executable Wrapper download | SourceForge.net.
-2.	Create a configuration file in xml format, refer Launch4j docs for creating the configuration file https://launch4j.sourceforge.net/docs.html#Runtime_options. 
-3.	Open the command prompt and navigate to the Launch4j directory.
-4.	Execute the FileOperations.xml file using the launch4j command and click on Enter 
-5.	The exe file created will be stored in the path that is specified in the FileOperations.xml file.
-
-
