@@ -7,8 +7,8 @@ This java based File Operation Tool was created using Eclipse workspace.
 2. **Line Manipulation**: You can remove the lines from 
 * One file that are in the other file.
 * One file that are not in the other file.  
-3. **Custom Configurations**: The config.properties file specifies the input file path, output file path and log file path.
-4. **Exception Handling**: The Exceptions are handled and logged them into logfile.log.
+[3]. **Custom Configurations**: The config.properties file specifies the input file path, output file path and log file path.
+[4]. **Exception Handling**: The Exceptions are handled and logged them into logfile.log.
 
 **COMMAND LINE OPTIONS**  
 1.	SortAsc
