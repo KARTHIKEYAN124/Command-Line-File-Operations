@@ -1,4 +1,4 @@
-<img width="430" alt="image" src="https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/e8e16f61-4ab0-4b56-a9fa-e9dd46b233c0">**OVERVIEW**
+**OVERVIEW**
 The Command-Line-File-Operations tool is a java based tool that is used to perform the operations on file that is Sorting, Removing the lines from the file.
 This java based File Operation Tool was created using Eclipse workspace.
 
