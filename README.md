@@ -20,23 +20,29 @@ This java based File Operation Tool was created using Eclipse workspace.
 
 **USAGE**   
 1. **SortAsc**: The FileOperations.exe command  The SortAsc command is used to sort the lines in the file in ascending order.  
-Usage: **FileOperations.exe SortAsc**.  ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/e7eeabec-c156-4ee8-89e0-12751a88f809)
+Usage: **FileOperations.exe SortAsc**.
+ ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/e7eeabec-c156-4ee8-89e0-12751a88f809)
 
 
-2. **SortDesc**: The SortDesc command is used to sort the lines in the file in descending order.  
-Usage: **FileOperations.exe SortDesc**. ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/f278c055-ce9d-4dec-accb-730e6c5dc062)
+3. **SortDesc**: The SortDesc command is used to sort the lines in the file in descending order.  
+Usage: **FileOperations.exe SortDesc**.
+![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/f278c055-ce9d-4dec-accb-730e6c5dc062)
 
-3. **SortAscCase**: The SortAscCase command is used to sort the lines in the file in ascending order of case sensitivity.  
-Usage: **FileOperations.exe SortAscCase**.  ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/e5fec937-cc6c-4cdb-83a9-bef0cfe91344)
+5. **SortAscCase**: The SortAscCase command is used to sort the lines in the file in ascending order of case sensitivity.  
+Usage: **FileOperations.exe SortAscCase**.
+ ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/e5fec937-cc6c-4cdb-83a9-bef0cfe91344)
 
 4.**SortDescCase**: The SortDescCase command is used to sort the lines in the file in descending order of case sensitivity.  
-Usage:**FileOperations.exe SortDescCase**. ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/c212b468-89ca-476c-a71d-870668cdb7bb)
+Usage:**FileOperations.exe SortDescCase**. 
+![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/c212b468-89ca-476c-a71d-870668cdb7bb)
 
 5.**RemoveLinesIn**: THe RemoveLinesIn command is used to remove the lines from one file that is present in another file.  
-Usage: **FileOperations.exe RemoveLineIn**. ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/28916f66-b646-4ddb-8c99-32670c0d96e1)
+Usage: **FileOperations.exe RemoveLineIn**. 
+![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/28916f66-b646-4ddb-8c99-32670c0d96e1)
 
 6.**RemoveLinesNotIn**: The RemoveLinesNotIn command is used to remove the lines from one file that are not present in another file.  
-Usage: **FileOperations.exe RemoveLinesNotIn**.  ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/25783299-4e5f-4bd0-919e-a0ce4a307fca)
+Usage: **FileOperations.exe RemoveLinesNotIn**. 
+![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/25783299-4e5f-4bd0-919e-a0ce4a307fca)
 
 
 **Steps to create a Jar file** :    
