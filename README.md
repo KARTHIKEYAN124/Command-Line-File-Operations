@@ -19,17 +19,17 @@ This java based File Operation Tool was created using Eclipse workspace.
 6.	RemoveLinesNotIn
 
 **USAGE**   
-1.SortAsc: The FileOperations.exe command The SortAsc command is used to sort the lines in the file in ascending order.
+1.SortAsc: The FileOperations.exe command The SortAsc command is used to sort the lines in the file in ascending order.    
 Usage: FileOperations.exe SortAsc.  
-2.SortDesc: The SortDesc command is used to sort the lines in the file in descending order.
+2.SortDesc: The SortDesc command is used to sort the lines in the file in descending order.  
 Usage: FileOperations.exe SortDesc.  
-3.SortAscCase: The SortAscCase command is used to sort the lines in the file in ascending order of case sensitivity.
+3.SortAscCase: The SortAscCase command is used to sort the lines in the file in ascending order of case sensitivity.  
 Usage: FileOperations.exe SortAscCase.  
-4.SortDescCase: The SortDescCase command is used to sort the lines in the file in descending order of case sensitivity.
+4.SortDescCase: The SortDescCase command is used to sort the lines in the file in descending order of case sensitivity.  
 Usage:FileOperations.exe SortDescCase.  
-5.RemoveLinesIn: THe RemoveLinesIn command is used to remove the lines from one file that is present in another file.
+5.RemoveLinesIn: THe RemoveLinesIn command is used to remove the lines from one file that is present in another file.  
 Usage: FileOperations.exe RemoveLineIn.  
-6.RemoveLinesNotIn: The RemoveLinesNotIn command is used to remove the lines from one file that are not present in another file.
+6.RemoveLinesNotIn: The RemoveLinesNotIn command is used to remove the lines from one file that are not present in another file.  
 Usage: FileOperations.exe RemoveLinesNotIn.     
 
 
