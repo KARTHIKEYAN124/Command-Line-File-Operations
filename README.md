@@ -19,9 +19,25 @@ This java based File Operation Tool was created using Eclipse workspace.
 6.	RemoveLinesNotIn
 
 **USAGE**   
-1. **Setup**: Download and Install the latest version of Eclipse Application https://www.eclipse.org/downloads/
-2. **Execution**: * To Run the project in the Eclipse Application Right click on the FileOperations.java file that is in the src/main directory click on Run As > Run Configurations. The Run Configurations pop up menu appears, Click on Arguments tab, under program arguments menu mention the task that is to be performed ( SortAsc, SortDesc, SortAscCase, SortDescCase, RemoveLinesIn, RemoveLinesNotIn ) and click on run to perform the task.
-* To Run the project in Command line generate the jar and exe files, follow the steps given below to perform the Jar and exe file creation.
+1. **SortAsc**: The FileOperations.exe command  The SortAsc command is used to sort the lines in the file in ascending order.
+Usage: **FileOperations.exe SortAsc**.  ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/e7eeabec-c156-4ee8-89e0-12751a88f809)
+
+
+2. **SortDesc**: The SortDesc command is used to sort the lines in the file in descending order.
+Usage: **FileOperations.exe SortDesc**. ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/f278c055-ce9d-4dec-accb-730e6c5dc062)
+
+3. **SortAscCase**: The SortAscCase command is used to sort the lines in the file in ascending order of case sensitivity.
+Usage: **FileOperations.exe SortAscCase**.  ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/e5fec937-cc6c-4cdb-83a9-bef0cfe91344)
+
+4.**SortDescCase**: The SortDescCase command is used to sort the lines in the file in descending order of case sensitivity.
+Usage:**FileOperations.exe SortDescCase**. ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/c212b468-89ca-476c-a71d-870668cdb7bb)
+
+5.**RemoveLinesIn**: THe RemoveLinesIn command is used to remove the lines from one file that is present in another file.
+Usage: **FileOperations.exe RemoveLineIn**. ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/28916f66-b646-4ddb-8c99-32670c0d96e1)
+
+6.**RemoveLinesNotIn**: The RemoveLinesNotIn command is used to remove the lines from one file that are not present in another file.
+Usage: **FileOperations.exe RemoveLinesNotIn**.  ![image](https://github.com/KARTHIKEYAN124/Command-Line-File-Operations/assets/89963351/25783299-4e5f-4bd0-919e-a0ce4a307fca)
+
 
 **Steps to create a Jar file** :    
 1.	Right click on the project. 
@@ -38,4 +54,4 @@ This java based File Operation Tool was created using Eclipse workspace.
 4.	Execute the FileOperations.xml file using the launch4j command and click on Enter 
 5.	The exe file created will be stored in the path that is specified in the FileOperations.xml file.
 
-*After creating the exe and jar file open command prompt and change the directory to where the exe file is stored, after the directory is changed give the command Example: **FileOperations.exe SortAsc**. 
+
