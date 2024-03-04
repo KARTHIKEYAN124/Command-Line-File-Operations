@@ -5,7 +5,7 @@ This java based File Operation Tool was created using Eclipse workspace.
 **FEATURES**  
 1.**Sorting the Files**: You can sort the lines in the file in Ascending, Descending, Ascending Case-Sensitive, Descending Case-Sensitive order.  
 2. **Line Manipulation**: You can remove the lines from 
-  -One file that are in the other file.  
+  -One file that are in the other file.    
   -One file that are not in the other file.  
 3. **Custom Configurations**: The config.properties file specifies the input file path, output file path and log file path.  
 4. **Exception Handling**: The Exceptions are handled and logged them into logfile.log.
