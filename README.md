@@ -33,7 +33,8 @@ The LineRemover class contains two methods that is RemoveLinesFromFile2 and Remo
 **USAGE**   
 1. **Setup**: Download and Install the latest version of Eclipse Application https://www.eclipse.org/downloads/
 2. **Execution**: * To Run the project in the Eclipse Application Right click on the FileOperations.java file that is in the src/main directory click on Run As > Run Configurations. The Run Configurations pop up menu appears, Click on Arguments tab, under program arguments menu mention the task that is to be performed ( SortAsc, SortDesc, SortAscCase, SortDescCase, RemoveLinesIn, RemoveLinesNotIn ) and click on run to perform the task.
-* To Run the project in Command line generate the jar and exe files, follow the steps given below to perform the Jar and exe file creation.  
+* To Run the project in Command line generate the jar and exe files, follow the steps given below to perform the Jar and exe file creation.
+
 **Steps to create a Jar file** :    
 1.	Right click on the project. 
 2.	Click on Export from the Dropdown. 
