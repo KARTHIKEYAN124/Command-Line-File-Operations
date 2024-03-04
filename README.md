@@ -6,21 +6,9 @@ This java based File Operation Tool was created using Eclipse workspace.
 1.**Sorting the Files**: You can sort the lines in the file in Ascending, Descending, Ascending Case-Sensitive, Descending Case-Sensitive order.  
 2. **Line Manipulation**: You can remove the lines from 
 * One file that are in the other file.
-* One file that are not in the other file.
+* One file that are not in the other file.  
 3. **Custom Configurations**: The config.properties file specifies the input file path, output file path and log file path.
 4. **Exception Handling**: The Exceptions are handled and logged them into logfile.log.
-
-**FILE CONTENTS**  
-***Src**: This Folder contains all the packages and classes that are needed for the program execution. This folder has the following packages file.operations, fileprocessors, main and test.
-***file.operations**: The file.operations package contains the classes Config, FileRead, FileWrite.
-The Config class contains the key value pairs of configuration settings from config.properties file.
-The FileRead class is used to read the contents of the file and return the lines to the FileWrite class.
-The FileWrite class is used to write the output contents given by Sorter or LineRemover class to the Output.txt file.
-***fileprocessors**: The fileprocessors package contains the classes Sorter and LineRemover.
-The Sorter class contains the sorting operation functionalities that is SortAsc, SortDesc, SortAsCaseSens, SortDescCaseSens. 
-The LineRemover class contains two methods that is RemoveLinesFromFile2 and RemoveLinesNotInFile2. 
-***main**: The main package contains the main class FileOperations.java where the program execution starts.
-***test**: The test package contains the FileOperationstest.java which is used to test the FileOperations,java class.
 
 **COMMAND LINE OPTIONS**  
 1.	SortAsc
